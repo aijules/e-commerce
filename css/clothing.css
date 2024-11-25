@@ -1,0 +1,454 @@
+/* Apply wallpaper to the entire body */
+body {
+  /* Ensures the background image covers the entire page */
+  
+  height: 100vh; /* Full-screen height */
+  margin: 0;
+  background-size: cover; /* Fit the background */
+  background-position: center; /* Center the image */
+  transition: background-image 2s ease-in-out; /* Smooth transition */
+  background-color: lightgrey;
+  
+}
+
+
+/* Navigation bar styles */
+nav {
+  background-color: black; /* Semi-transparent background for nav */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+/* Style for the search bar */
+#searchInput{
+  width: 50%; /* Adjust the width */
+  height: 30px; /* Adjust the height */
+  font-size: 16px; /* Increase font size */
+  padding: 10px; /* Add padding for better spacing */
+  
+  border-radius: 5px; /* Rounded corners */
+  display: flex;
+ 
+  text-align: center;
+
+}
+
+
+#searchInput:focus {
+  outline: none;
+  border-color: #007BFF; /* Highlight border on focus */
+  
+  text-align: center;
+
+}
+
+#search-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Styling for the input field */
+.search-bar {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px; /* Adjust width as needed */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  
+  text-align: center;
+}
+
+/* Styling for the button */
+
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #ff6347; /* Highlight on hover */
+}
+
+/* Heading styles */
+nav h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#signupButton{
+color: white;
+background-color:blue;
+font-size: small;
+
+}#signinButton{
+color: white;
+background-color:blue;
+font-size: small;
+
+}
+
+
+
+#searchDropdown {
+  position: absolute;
+  width: 60%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: lower-alpha;
+  margin: 0;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+#searchDropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#searchDropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style for forms */
+.form-container {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 300px;
+}
+
+.form-container h2 {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Show form when visible */
+.hidden {
+  display: none;
+}
+
+/* Hide forms initially */
+.hidden {
+display: none;
+}
+
+/* Style for forms */
+form {
+
+width: 50%;
+background-color: #f9f9f9;
+border-radius: 10px;
+}
+
+form label {
+display: block;
+margin: 10px 0 5px;
+}
+
+form input {
+width: 100%;
+padding: 8px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+/* Style for buttons */
+button {
+background-color: #007BFF;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+#signinError {
+color: red;
+font-weight: bold;
+}
+/* Image slider container */
+/* General styles for slider container */
+#sliderContainer {
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+transition: background-image 1s ease-in-out;
+}
+
+/* Background slider navigation buttons */
+.background-slider-controls {
+position: fixed;
+bottom: 10%;
+left: 0;
+right: 0;
+display: flex;
+justify-content: space-between;
+padding: 0 10px;
+z-index: 10;
+}
+
+.slider-btn {
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+border: none;
+padding: 10px 15px;
+font-size: 24px;
+cursor: pointer;
+border-radius: 50%;
+}
+
+.slider-btn:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-controls {
+position: absolute;
+top: 50%; /* Center vertically */
+width: 100%; /* Full width */
+display: flex;
+justify-content: space-between; /* Space out buttons */
+transform: translateY(-50%);
+pointer-events: none; /* Avoid interfering with body scroll */
+}
+
+button {
+background-color: rgba(255, 255, 255, 0.7);
+border: 1px solid #ccc;
+color: #333;
+font-size: 18px;
+padding: 10px 20px;
+cursor: pointer;
+border-radius: 5px;
+pointer-events: auto; /* Re-enable pointer events for buttons */
+}
+
+button:hover {
+background-color: rgba(200, 200, 200, 0.9);
+}
+
+/* Product display layout */
+.product-section {
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+}
+
+.product-row {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.product {
+width: 20%;
+height:20%;
+background-color
+color: white;
+
+text-align: center;
+}
+
+#h1b{
+background-color: orangered;
+
+}
+
+.product img {
+width: 50%;
+height: 50%;
+height: auto;
+}
+
+.product p {
+margin: 5px 0;
+}
+
+.product-row .product {
+border: 1px solid #ddd;
+padding: 10px;
+border-radius: 10px;
+
+}
+#h1a{
+color:darkblue;
+font-weight:bolder;
+display: flexbox;
+
+text-decoration-color: black;
+text-transform: capitalize;
+
+
+}
+.buy-now-button {
+background:blue;
+color:white;
+border: none;
+border-radius: 5px;
+padding: 10px;
+cursor: pointer;
+font-size: small;
+}
+
+.buy-now:hover {
+background: blue;
+}
+
+/* General styling for the dialog box */
+.dialog-box {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #fff;
+border: 2px solid #333;
+border-radius: 8px;
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+text-align: center;
+z-index: 1000;
+font-size: small;
+}
+
+.dialog-box p {
+font-size: 18px;
+margin-bottom: 15px;
+
+}
+
+.dialog-box button {
+background: BLUE;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px 15px;
+cursor: pointer;
+margin: 0 10px;
+font-size: small;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.dialog-box button:hover {
+background: #0056b3;
+}
+
+footer {
+background-color: #333;
+color: white;
+padding: 10px;
+text-align: center;
+}
+
+footer .social-icons a {
+margin: 0 10px;
+color: white;
+text-decoration: none;
+}
+
+footer .social-icons a:hover {
+color: #ffd700;
+}
+#footer{
+  
+
+color: black;
+display: flex;
+background: linear-gradient(black,pink, #ff7e5f, #6a11cb, #2575fc);
+}
+
+#footer #col{
+    width: 25%;
+    margin-left: 60px;
+}
+#footer button{
+background-color: black;
+color: white;
+padding: 10px;
+font-family: fantasy;
+font-size:medium;
+
+}
+#col ul{
+
+    list-style-type: circle;
+
+}
+
+
+#mid{
+text-align: center;
+color: blue;
+}
+
+#box1{
+  font-size: medium;
+  background-color: azure;
+}
+#box2{
+  font-size: medium;
+  background-color: azure;
+}
+
+
+#box3{
+  font-size: medium;
+  background-color: azure;
+}
+#box4{
+  font-size: medium;
+  background-color: azure;
+}

@@ -1,0 +1,21 @@
+body{
+background-color: aliceblue;
+justify-content: center;
+text-align: center;
+justify-content: space-between;
+
+}
+
+a{
+
+font-size: larger;
+justify-content: center;
+text-align: center;
+text-decoration:underline ;
+justify-content: space-between;
+padding: 10px;
+
+}
+image{
+    display: grid;
+}

@@ -1,0 +1,175 @@
+body{
+    background-color: azure;
+}
+
+
+#h1{
+    color:black;
+    text-decoration-line:underline ;
+    font-size: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    header {
+        background-color: black;
+        color:white;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 400px;
+    }
+    #h1a{
+        font-size: 40px;
+        color:black;
+        font-family: fantasy;
+    }
+    span{
+        color: gray;
+    }
+    
+    #leftside{
+        display: flex;
+    } 
+    
+    
+    #rightside{
+        display: flex;
+    }
+    
+    #rightside h1{
+        margin-left: 40px;
+    }
+    
+    #logo h1{
+        color: black;
+        font-size: 24px;
+        font-family: fantasy;
+    }
+    
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-left: 10px;
+        
+    }
+    
+    #links a{
+    padding-left:30px;
+    text-decoration: none;
+    color:blue;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+    justify-content: center;
+    }
+    
+    #links a:hover{
+        color:red;
+        }
+    #left h1{
+        color:#4e342e;
+        font-size: 50px;
+        font-family: auto;
+    
+    
+    }
+    
+    #left h2{
+        color:black;
+        font-size: 60px;
+        font-family: auto;
+    
+    #left h3{
+color:black;
+
+    }
+    }
+    #left p{
+    font-size: 20px;
+        color:grey;
+        font-family: none;
+    
+    }
+    
+    #section {
+        display: flex;
+    }
+    
+    #section #right{
+        margin-top: 50px;
+    }
+    #section h1{
+color:black;
+
+    }
+    #right h2{
+        color:black;
+        font-size: 30px;
+    }
+    #right h3{
+
+        color:black;
+        font-size: 40px;
+        font-family: auto;
+    
+    }
+    legend{
+        font-size:40px;
+    }
+    
+    
+    #right button{
+        color: white;
+        background-color:black;
+        border: none;
+        padding: 15px;
+    }
+    
+    
+    
+    
+    #footer{
+        
+    
+    color: black;
+    display: flex;
+    background: linear-gradient(black,pink, #ff7e5f, #6a11cb, #2575fc);
+
+    
+    }
+    
+    #footer #col{
+        width: 25%;
+        margin-left: 60px;
+    }
+    #footer button{
+    background-color:black;
+    color: white;
+    padding: 10px;
+    font-family: fantasy;
+    font-size:medium;
+    
+    }
+    #col ul{
+    
+        list-style-type: circle;
+    }
+    foot{
+        color: black;
+        background-color: blue;
+    }
+
+    #right1{
+display: flex;
+padding: 0px;
+
+
+    }
+    #left pre{
+font-size: 20px;
+
+    }
+    #left h3{
+        color:#4e342e;
+        font-size: 30px;
+    }
